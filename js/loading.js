@@ -1,7 +1,7 @@
-function closeLoading(){
+function closeLoading() {
     document.getElementById('loading').style.display = 'none';
 }
 
-function openLoading(){
+function openLoading() {
     document.getElementById('loading').style.display = null;
 }
