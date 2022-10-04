@@ -1,0 +1,23 @@
+:root {
+    /*--system-background: rgba(250,250,250,.85); /*Ligth*/
+    --system-background: rgba(5, 5, 5, .85);
+    /*Dark*/
+    /*--system-color: linear-gradient(150deg, rgba(180,141,255,1) 0%, rgba(0,123,195,1) 10%, rgba(0,195,195,1) 90%, rgba(180,141,255,1) 100%); /*Ligth*/
+    --system-color: linear-gradient(150deg, rgba(11, 201, 140, 1) 0%, rgba(217, 222, 72, 1) 100%);
+    /*Dark*/
+    --system-color-simple: rgba(11, 201, 140, 1);
+    /*--system-font-color: rgba(5,5,5,.95); /*Ligth*/
+    --system-font-color: rgba(250, 250, 250, .95);
+    /*Dark*/
+    --system-border: 10px;
+    --system-shadow: rgba(5, 5, 5, .3);
+    --system-shadow-hover: rgba(5, 5, 5, .5);
+    --system-blur: 6px;
+}
+
+html,
+body {
+    height: 100vh;
+    background: transparent;
+    color: var(--system-font-color);
+}
