@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Vasak-OS/libvasak-ui#readme",
   "devDependencies": {
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
-    "eslint": "^8.25.0"
+    "eslint": "^8.25.0",
+    "eslint-plugin-css": "^0.6.0"
   }
 }
