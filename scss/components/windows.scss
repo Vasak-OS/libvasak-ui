@@ -1,0 +1,12 @@
+.main-window {
+	background: var(--system-background);
+	border: 1px solid var(--system-color-simple);
+	border-radius: var(--system-border);
+	height: 100vh;
+	width: 100vw;
+	overflow: scroll;
+}
+
+.window-content {
+	margin-top: 40px;
+}
