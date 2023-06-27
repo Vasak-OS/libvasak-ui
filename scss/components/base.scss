@@ -1,0 +1,92 @@
+html,
+body {
+	height: 100vh;
+	background: transparent;
+	color: var(--system-font-color);
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	border-radius: var(--system-border);
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px var(--system-shadow);
+	border-radius: var(--system-border);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--system-color);
+	border-radius: var(--system-border);
+}
+
+.btn {
+	border-radius: var(--system-border);
+}
+
+.btn-primary {
+	background: var(--system-color);
+	border: 0px;
+
+	&:hover {
+		animation: wiggle 2s linear infinite;
+		border: 0px;
+	}
+}
+
+input {
+	accent-color: var(--system-color);
+}
+
+#tools-bar {
+	border-radius: var(--system-border) var(--system-border) 0 0;
+	background: var(--system-color);
+	font-weight: bold;
+	height: 32px;
+	vertical-align: middle;
+	-webkit-app-region: drag;
+	font-size: 14px;
+	padding: 6px 0px;
+	position: absolute;
+	z-index: 999999;
+
+	div,
+	button {
+		padding: 0px;
+	}
+
+	button {
+		-webkit-app-region: no-drag;
+		padding: 0 9px;
+		color: var(--system-font-color);
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.2);
+		}
+	}
+
+	#buttons {
+		position: absolute;
+		right: 20px;
+		top: 3px;
+	}
+}
+
+.list-group {
+	border-radius: var(--system-border);
+}
+
+.list-group-item {
+	color: var(--system-text-color);
+	background: var(--system-background);
+
+	&.active {
+		background: var(--system-color);
+		border-color: var(--system-color-simple);
+	}
+}
+
+.form-check-input:checked {
+	background-color: var(--system-color-simple);
+	border-color: var(--system-color-simple);
+}

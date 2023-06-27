@@ -1,0 +1,72 @@
+#menu {
+	background: var(--system-background);
+	border-radius: var(--system-border);
+	bottom: 0;
+	height: 560px;
+	margin-top: 60px;
+}
+
+#menu-content {
+	height: 400px;
+	overflow-y: scroll;
+}
+
+#menu-category {
+	margin-top: 5px;
+}
+
+.category-img {
+	max-height: 24px;
+}
+
+.vsk-profile-picture {
+	border-radius: 50%;
+	max-width: 90px;
+	max-height: 90px;
+}
+
+.btn-session {
+	margin-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#user-info {
+	margin-top: -55px;
+}
+
+.form-control {
+	background: var(--system-background);
+	color: var(--system-font-color);
+	margin-top: 10px;
+	border: 1px solid var(--system-color);
+	border-radius: var(--system-border);
+}
+
+.input-group-text {
+	background: var(--system-color);
+	color: var(--system-background);
+	margin-top: 10px;
+	border: 1px solid var(--system-color);
+	border-radius: var(--system-border);
+}
+
+.name-app {
+	color: var(--system-font-color);
+	font-size: 12px;
+}
+
+.btn-app,
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+	border-radius: var(--system-border);
+}
+
+.btn-app:hover {
+	background: var(--system-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	background: var(--system-color);
+}
