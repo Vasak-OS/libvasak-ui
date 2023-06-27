@@ -1,6 +1,6 @@
 {
 	"name": "libvasak-ui",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "UI lib for VasakOS",
 	"main": "index.js",
 	"scripts": {

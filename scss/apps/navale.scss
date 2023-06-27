@@ -1,0 +1,55 @@
+.navbar {
+	margin: 0px 10px;
+	max-height: 32px;
+	margin-top: 2px;
+	background: var(--system-background);
+	border-radius: var(--system-border);
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+.dock-menu-launcher-icon {
+	height: 28px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	animation: wiggle 2s linear infinite;
+}
+
+.win-img {
+	height: 26px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	&:hover {
+		transform: scale(1.25);
+		animation: wiggle 2s linear infinite;
+	}
+}
+
+.win-button {
+	border: 0px solid transparent;
+	padding: 0px;
+	border-radius: var(--system-border);
+}
+
+body {
+	overflow: hidden;
+}
+
+#notificationArea div {
+	display: inline-block;
+
+	img:hover {
+		animation: wiggle 2s linear infinite;
+	}
+}
+
+#clock {
+	vertical-align: middle;
+	font-size: 14px;
+	padding: 2px 0;
+}
