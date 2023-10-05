@@ -43,6 +43,10 @@ body {
 #notificationArea div {
 	display: inline-block;
 
+	img{
+		margin-right: 10px;
+	}
+
 	img:hover {
 		animation: wiggle 2s linear infinite;
 	}
