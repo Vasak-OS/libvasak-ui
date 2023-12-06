@@ -2,11 +2,11 @@
   background: var(--system-background);
   border-radius: var(--system-border);
   bottom: 0;
-  height: 620px;
+  height: 100vh;
 }
 
 #menu-content {
-  height: 400px;
+  height: calc(100vh - 200px);
   overflow-y: scroll;
 }
 
@@ -20,13 +20,11 @@
 
 .vsk-profile-picture {
   border-radius: 50%;
-  max-width: 90px;
-  max-height: 90px;
 	margin-bottom: 30px;
 }
 
 .btn-session {
-  padding: 20px;
+  margin-top: 10px;
 }
 
 .form-control {
