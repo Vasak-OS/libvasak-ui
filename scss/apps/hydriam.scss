@@ -14,7 +14,6 @@
 }
 
 #menu-category {
-  margin-top: 5px;
   background: var(--system-background);
   border-radius: var(--system-border);
   padding: 5px;
@@ -113,4 +112,20 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: initial;
+}
+
+.widget-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6px;
+  border-radius: var(--system-border);
+  background: var(--system-background);
+}
+
+.temp-text {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
