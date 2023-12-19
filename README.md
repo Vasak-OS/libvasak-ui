@@ -4,6 +4,19 @@
 
 UI Library for Vasak Apps and VasakOS. This library is used to create a UI for Vasak Apps and VasakOS. This library is written in CSS and JS.
 
+## Installation
+
+To install this library, you need to run the following command:
+
+```bash
+git clone git@github.com:Vasak-OS/libvasak-ui.git
+cd libvasak-ui
+yarn install
+yarn build
+sudo cp dist/style.min.css /usr/lib/libvasak-ui/css/style.min.css
+```
+
+
 ## How to use
 
 To use this library, you need to add the following code to your HTML file:
@@ -44,3 +57,14 @@ git push origin feature/my-new-animation
 ```
 
 5. Create a new Pull Request
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
