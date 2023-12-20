@@ -60,11 +60,6 @@ git push origin feature/my-new-animation
 
 ## Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<a href="https://github.com/vasak-os/libvasak-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vasak-os/libvasak-ui" />
+</a>
