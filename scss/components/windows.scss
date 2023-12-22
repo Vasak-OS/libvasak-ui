@@ -1,12 +1,111 @@
-.main-window {
-	background: var(--system-background);
-	border: 1px solid var(--system-color-simple);
-	border-radius: var(--system-border);
-	height: 100vh;
-	width: 100vw;
-	overflow: scroll;
+.window {
+  width: 100vw;
+  height: calc(100vh - 30px);
+  background: var(--system-background);
+  border-radius: 0 0 var(--system-border) var(--system-border);
 }
 
-.window-content {
-	margin-top: 40px;
+.window-topbar {
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--system-color);
+  border-radius: var(--system-border) var(--system-border) 0 0;
+  -webkit-app-region: drag;
+  padding: 2px 10px;
+}
+
+.win-edge {
+  position: absolute;
+  z-index: 100;
+  background: transparent;
+}
+
+.win-edge-top {
+  top: 0;
+  left: 10px;
+  width: calc(100vw - 20px);
+  height: 3px;
+  cursor: ns-resize;
+  font-size: 0;
+}
+
+.win-edge-bottom {
+  bottom: 0;
+  left: 10px;
+  width: calc(100vw - 20px);
+  height: 3px;
+  cursor: ns-resize;
+}
+
+.win-edge-left {
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: calc(100vh - 20px);
+  cursor: ew-resize;
+}
+
+.win-edge-right {
+  top: 10px;
+  right: 0;
+  width: 3px;
+  height: calc(100vh - 20px);
+  cursor: ew-resize;
+}
+
+.win-edge-topleft {
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nwse-resize;
+
+  &:hover {
+    content: "↖";
+  }
+}
+
+.win-edge-bottomleft {
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nesw-resize;
+
+  &:hover {
+    content: "↙";
+  }
+}
+
+.win-edge-topright {
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nesw-resize;
+
+  &:hover {
+    content: "↗";
+  }
+}
+
+.win-edge-bottomright {
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nwse-resize;
+
+  &:hover {
+    content: "↘";
+  }
+}
+
+.win-button {
+  color: var(--system-text);
+  text-decoration: none;
+  padding: 0 5px;
 }
