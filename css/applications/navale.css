@@ -1,0 +1,49 @@
+@layer components {
+  .navale {
+    @apply background;
+    @apply rounded-vsk;
+    height: calc(100vh - 4px);
+    width: calc(100vw - 24px);
+    @apply mt-1;
+    @apply mx-3;
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+  }
+
+  .navale-applications-zone,
+  .navale-notification-area {
+    @apply w-1/4;
+    @apply h-full;
+    @apply flex;
+    @apply py-1;
+  }
+
+  .navale-applications-zone img {
+    @apply h-full;
+    @apply w-auto;
+    @apply scale-75;
+    @apply hover:scale-100;
+    @apply transition-all;
+    @apply hover:drop-shadow-lg;
+  }
+
+  .navale-notification-area {
+    @apply items-center;
+    @apply justify-end;
+  }
+
+  .navale-notification-area div {
+    @apply px-2
+  }
+
+  .navale-notification-area img {
+    @apply h-6;
+    @apply w-auto;
+  }
+
+  .navale-menu img {
+    @apply h-7;
+    @apply w-auto;
+  }
+}
