@@ -12,4 +12,14 @@
     @apply dark:bg-gray-800/75;
     @apply backdrop-blur;
   }
+
+  table {
+    @apply w-full;
+    @apply background;
+    @apply rounded-vsk;
+  }
+
+  th, td {
+    @apply p-2;
+  }
 }
