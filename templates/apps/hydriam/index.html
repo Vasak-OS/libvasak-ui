@@ -1,0 +1,1616 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../../../css/style.css" rel="stylesheet">
+
+  <title>Hydriam</title>
+</head>
+
+<body>
+  <div id="menu" class="container-fluid" data-v-app="">
+    <div class="row">
+      <div class="col-md-3 user-card">
+        <div id="user-info" class="text-center"><img src="file:///home/pato/.face"
+            class="img-fluid vsk-profile-picture user-img" id="user-img" alt="user"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-12" id="searc-div">
+          <div class="input-group mb-3"><input type="text" class="form-control" placeholder="Search" aria-label="Search"
+              id="search"></div>
+        </div>
+      </div>
+      <div class="col-md-3 session-card"><a data-bs-toggle="tooltip" data-bs-placement="left" title="Shutdown" href="#"
+          class="btn btn-primary btn-session"><img
+            src="file:///mnt/FAD49A00D499BEF7/Code/VasakOS/hydriam/ui/dist/assets/shutdown-274d06ae.svg"
+            class="img-fluid" style="filter: drop-shadow(rgb(34, 34, 34) 1px 1px 3px);"></a><a data-bs-toggle="tooltip"
+          data-bs-placement="left" title="Reboot" href="#" class="btn btn-primary btn-session"><img
+            src="file:///mnt/FAD49A00D499BEF7/Code/VasakOS/hydriam/ui/dist/assets/reboot-1c89815d.svg" class="img-fluid"
+            style="filter: drop-shadow(rgb(34, 34, 34) 1px 1px 3px);"></a><a data-bs-toggle="tooltip"
+          data-bs-placement="left" title="Logout" href="#" class="btn btn-primary btn-session"><img
+            src="file:///mnt/FAD49A00D499BEF7/Code/VasakOS/hydriam/ui/dist/assets/logout-d98fdd39.svg" class="img-fluid"
+            style="filter: drop-shadow(rgb(34, 34, 34) 1px 1px 3px);"></a><a data-bs-toggle="tooltip"
+          data-bs-placement="left" title="Suspend" href="#" class="btn btn-primary btn-session"><img
+            src="file:///mnt/FAD49A00D499BEF7/Code/VasakOS/hydriam/ui/dist/assets/suspend-a5ad60dd.svg"
+            class="img-fluid" style="filter: drop-shadow(rgb(34, 34, 34) 1px 1px 3px);"></a></div>
+      <div class="col-md-4">
+        <div class="col-12">
+          <div class="tab-content" id="menu-content">
+            <div class="tab-pane fade app-tab" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Acceder a archivos y organizarlos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Nautilus.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Archivos</span><span
+                          class="text-muted" style="display: none;">Acceder a archivos y organizarlos</span><span
+                          style="display: none;">carpeta gestor explorar disco sistema de archivos nautilus</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Keyboard and mouse sharing solution">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/barrier.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Barrier</span><span
+                          class="text-muted" style="display: none;">Keyboard and mouse sharing solution</span><span
+                          style="display: none;">keyboard mouse sharing network share</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Realice cálculos aritméticos, científicos o financieros">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Calculator.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Calculadora</span><span
+                          class="text-muted" style="display: none;">Realice cálculos aritméticos, científicos o
+                          financieros</span><span style="display: none;">cálculo aritmética científica financiera</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Guarde imágenes de su pantalla o de ventanas individuales">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Screenshot.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Captura de
+                          pantalla</span><span class="text-muted" style="display: none;">Guarde imágenes de su pantalla
+                          o de ventanas individuales</span><span style="display: none;">pantallazo capturar
+                          imprimir</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Gestione dispositivos y soportes">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.DiskUtility.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Discos</span><span
+                          class="text-muted" style="display: none;">Gestione dispositivos y soportes</span><span
+                          style="display: none;">disco dispositivo volumen disco duro hdd disco cdrom dvd partición iso
+                          imagen copia de respaldo restaurar prueba de rendimiento raid luks cifrado S.M.A.R.T.
+                          smart</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ver y editar archivos de texto">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.TextEditor.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Editor de texto</span><span
+                          class="text-muted" style="display: none;">Ver y editar archivos de texto</span><span
+                          style="display: none;">escribir cuaderno de notas</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Configurar las extensiones de GNOME Shell">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Extensions.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Extensiones</span><span
+                          class="text-muted" style="display: none;">Configurar las extensiones de GNOME
+                          Shell</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cree y modifique un archivador">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.FileRoller.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Gestor de
+                          archivadores</span><span class="text-muted" style="display: none;">Cree y modifique un
+                          archivador</span><span style="display: none;">zip tar extraer desempaquetar</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Control RGB lighting">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/OpenRGB.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">OpenRGB</span><span
+                          class="text-muted" style="display: none;">Control RGB lighting</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ajustes de configuración avanzados en GNOME">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.tweaks.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Retoques</span><span
+                          class="text-muted" style="display: none;">Ajustes de configuración avanzados en
+                          GNOME</span><span style="display: none;">Configuración Avanzada Preferencias Tipografías Tema
+                          XKB Teclado Escritura</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Linux System Optimizer and Monitoring">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/stacer.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Stacer</span><span
+                          class="text-muted" style="display: none;">Linux System Optimizer and Monitoring</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ver las tipografías de su sistema">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.font-viewer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Tipografías</span><span
+                          class="text-muted" style="display: none;">Ver las tipografías de su sistema</span><span
+                          style="display: none;">tipografía letra tipo</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Application launcher for Linux">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/ulauncher.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Ulauncher</span><span
+                          class="text-muted" style="display: none;">Application launcher for Linux</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Work around problems and install applications under Wine">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/winetricks.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Winetricks</span><span
+                          class="text-muted" style="display: none;">Work around problems and install applications under
+                          Wine</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab active show" id="all-applications" role="tabpanel"
+              aria-labelledby="all-applications-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Acceder a archivos y organizarlos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Nautilus.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Archivos</span><span
+                          class="text-muted" style="display: none;">Acceder a archivos y organizarlos</span><span
+                          style="display: none;">carpeta gestor explorar disco sistema de archivos nautilus</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Grabar y editar archivos de audio">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/audacity.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Audacity</span><span
+                          class="text-muted" style="display: none;">Grabar y editar archivos de audio</span><span
+                          style="display: none;">sound music editing voice channel frequency modulation audio trim
+                          clipping noise reduction multi track audio editor edit mixing WAV AIFF FLAC MP2 MP3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Keyboard and mouse sharing solution">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/barrier.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Barrier</span><span
+                          class="text-muted" style="display: none;">Keyboard and mouse sharing solution</span><span
+                          style="display: none;">keyboard mouse sharing network share</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Realice cálculos aritméticos, científicos o financieros">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Calculator.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Calculadora</span><span
+                          class="text-muted" style="display: none;">Realice cálculos aritméticos, científicos o
+                          financieros</span><span style="display: none;">cálculo aritmética científica financiera</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Acceder y gestionar sus calendarios">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Calendar.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Calendario</span><span
+                          class="text-muted" style="display: none;">Acceder y gestionar sus calendarios</span><span
+                          style="display: none;">Calendario Evento Recordatorio</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hacer fotos y vídeos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Snapshot.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cámara</span><span
+                          class="text-muted" style="display: none;">Hacer fotos y vídeos</span><span
+                          style="display: none;">picture photos camera webcam snapshot</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Guarde imágenes de su pantalla o de ventanas individuales">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Screenshot.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Captura de
+                          pantalla</span><span class="text-muted" style="display: none;">Guarde imágenes de su pantalla
+                          o de ventanas individuales</span><span style="display: none;">pantallazo capturar
+                          imprimir</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Tome fotografías y vídeos con su cámara web, con divertidos efectos gráficos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Cheese.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cheese</span><span
+                          class="text-muted" style="display: none;">Tome fotografías y vídeos con su cámara web, con
+                          divertidos efectos gráficos</span><span style="display: none;">foto vídeo cámara web cámara
+                          selfie</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cross-platform buildsystem">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/CMakeSetup.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">CMake</span><span
+                          class="text-muted" style="display: none;">Cross-platform buildsystem</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top" title="None">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Settings.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Configuración</span><span
+                          class="text-muted" style="display: none;">None</span><span style="display: none;">Preferencias
+                          Configuración</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top" title="None">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Console.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Consola</span><span
+                          class="text-muted" style="display: none;">None</span><span style="display: none;">comando
+                          prompt cmd línea ejecutar shell terminal kgx kings cross</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Gestionar sus contactos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Contacts.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Contactos</span><span
+                          class="text-muted" style="display: none;">Gestionar sus contactos</span><span
+                          style="display: none;">amigos libreta de direcciones</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ajustar el nivel de volumen">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/multimedia-volume-control.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Control de volumen de
+                          PulseAudio</span><span class="text-muted" style="display: none;">Ajustar el nivel de
+                          volumen</span><span style="display: none;">pavucontrol micrófono volumen fundido balance
+                          auriculares altavoces cascos audio mezclador salida entrada dispositivos reproducción
+                          grabación sonidos del sistema tarjeta de sonido configuración preferencias</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Configuración del cortafuegos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/firewall-config.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cortafuegos</span><span
+                          class="text-muted" style="display: none;">Configuración del cortafuegos</span><span
+                          style="display: none;">cortafuegos red seguridad iptables netfilter</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="All-in-one voice and text chat for gamers that s free, secure, and works on both your desktop and phone.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/discord.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Discord</span><span
+                          class="text-muted" style="display: none;">All-in-one voice and text chat for gamers that s
+                          free, secure, and works on both your desktop and phone.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Gestione dispositivos y soportes">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.DiskUtility.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Discos</span><span
+                          class="text-muted" style="display: none;">Gestione dispositivos y soportes</span><span
+                          style="display: none;">disco dispositivo volumen disco duro hdd disco cdrom dvd partición iso
+                          imagen copia de respaldo restaurar prueba de rendimiento raid luks cifrado S.M.A.R.T.
+                          smart</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ver y editar archivos de texto">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.TextEditor.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Editor de texto</span><span
+                          class="text-muted" style="display: none;">Ver y editar archivos de texto</span><span
+                          style="display: none;">escribir cuaderno de notas</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Observe la gestión de energía">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.PowerStats.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Estadísticas de
+                          energía</span><span class="text-muted" style="display: none;">Observe la gestión de
+                          energía</span><span style="display: none;">batería consumo carga</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examinar servidores SSH con zeroconf activado">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/devices/network-wired.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Examinador de servidores SSH
+                          de Avahi</span><span class="text-muted" style="display: none;">Examinar servidores SSH con
+                          zeroconf activado</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examinar servidores VNC con zeroconf activado">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/devices/network-wired.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Examinador de servidores VNC
+                          de Avahi</span><span class="text-muted" style="display: none;">Examinar servidores VNC con
+                          zeroconf activado</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Configurar las extensiones de GNOME Shell">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Extensions.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Extensiones</span><span
+                          class="text-muted" style="display: none;">Configurar las extensiones de GNOME
+                          Shell</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examine y rote imágenes">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.eog.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Eye of GNOME</span><span
+                          class="text-muted" style="display: none;">Examine y rote imágenes</span><span
+                          style="display: none;">Foto Diapositivas Gráficos</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Download and upload files via FTP, FTPS and SFTP">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/filezilla.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">FileZilla</span><span
+                          class="text-muted" style="display: none;">Download and upload files via FTP, FTPS and
+                          SFTP</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Envíe y reciba mensajes de correo electrónico">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Geary.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Geary</span><span
+                          class="text-muted" style="display: none;">Envíe y reciba mensajes de correo
+                          electrónico</span><span style="display: none;">Mail E-mail email IMAP GMail Yahoo Hotmail
+                          Outlook</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cree y modifique un archivador">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.FileRoller.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Gestor de
+                          archivadores</span><span class="text-muted" style="display: none;">Cree y modifique un
+                          archivador</span><span style="display: none;">zip tar extraer desempaquetar</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/google-chrome.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Google Chrome</span><span
+                          class="text-muted" style="display: none;">Accede a Internet.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/google-chrome-unstable.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Google Chrome
+                          (unstable)</span><span class="text-muted" style="display: none;">Accede a
+                          Internet.</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="www.guilded.gg">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/hicolor/64x64/apps/guilded.png" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Guilded</span><span
+                          class="text-muted" style="display: none;">www.guilded.gg</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Show hardware topology">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/hwloc.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Hardware Locality
+                          lstopo</span><span class="text-muted" style="display: none;">Show hardware
+                          topology</span><span style="display: none;">System Utility</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea información acerca de su red">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/gnome-nettool.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Herramientas de
+                          red</span><span class="text-muted" style="display: none;">Vea información acerca de su
+                          red</span><span style="display: none;">red monitor remoto</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Debug APIs like a human, not a robot">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/insomnia.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Insomnia</span><span
+                          class="text-muted" style="display: none;">Debug APIs like a human, not a robot</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Editor no lineal de video de KDE">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/kdenlive.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Kdenlive</span><span
+                          class="text-muted" style="display: none;">Editor no lineal de video de KDE</span><span
+                          style="display: none;">edición video audio mlt kde</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/microsoft-edge.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Microsoft Edge</span><span
+                          class="text-muted" style="display: none;">Accede a Internet.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///home/pato/.local/share/icons/hicolor/64x64/apps/steam_icon_241930.png"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Middle-earth™: Shadow of
+                          Mordor™</span><span class="text-muted" style="display: none;">Play this game on
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea los procesos actuales y monitorizar el estado del sistema">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.SystemMonitor.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Monitor del
+                          sistema</span><span class="text-muted" style="display: none;">Vea los procesos actuales y
+                          monitorizar el estado del sistema</span><span style="display: none;">Monitor Sistema Proceso
+                          CPU Memoria Red Histórico Uso Rendimiento Tarea:Gestor Actividad</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Reproducir y organizar su colección de música">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Music.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Música</span><span
+                          class="text-muted" style="display: none;">Reproducir y organizar su colección de
+                          música</span><span style="display: none;">Música Reproductor</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Navegar en busca de servicios Zeroconf disponibles en su red">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/devices/network-wired.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Navegador Zeroconf de
+                          Avahi</span><span class="text-muted" style="display: none;">Navegar en busca de servicios
+                          Zeroconf disponibles en su red</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Free and Open Source Streaming/Recording Software">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/com.obsproject.Studio.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">OBS Studio</span><span
+                          class="text-muted" style="display: none;">Free and Open Source Streaming/Recording
+                          Software</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Control RGB lighting">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/OpenRGB.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">OpenRGB</span><span
+                          class="text-muted" style="display: none;">Control RGB lighting</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cree imágenes y edite fotografías">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/gimp.svg" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Programa de manipulación de
+                          imágenes de GNU</span><span class="text-muted" style="display: none;">Cree imágenes y edite
+                          fotografías</span><span style="display: none;">GIMP gráfico diseño ilustración dibujo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Proton
+                          Experimental</span><span class="text-muted" style="display: none;">Play this game on
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Shows Qt documentation and examples">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/assistant.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt Assistant</span><span
+                          class="text-muted" style="display: none;">Shows Qt documentation and examples</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Design GUIs for Qt applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/QtProject-designer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt Designer</span><span
+                          class="text-muted" style="display: none;">Design GUIs for Qt applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Add translations to Qt applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/linguist.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt Linguist</span><span
+                          class="text-muted" style="display: none;">Add translations to Qt applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Debug D-Bus applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qdbusviewer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt QDBusViewer </span><span
+                          class="text-muted" style="display: none;">Debug D-Bus applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Allow testing Video4Linux devices">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qv4l2.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt V4L2 test
+                          Utility</span><span class="text-muted" style="display: none;">Allow testing Video4Linux
+                          devices</span><span style="display: none;">video grabber V4L</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Viewer for video capture">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qvidcap.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt V4L2 video capture
+                          utility</span><span class="text-muted" style="display: none;">Viewer for video
+                          capture</span><span style="display: none;">video grabber V4L</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Lea, capture y emita sus contenidos multimedia">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/vlc.svg" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Reproductor multimedia
+                          VLC</span><span class="text-muted" style="display: none;">Lea, capture y emita sus contenidos
+                          multimedia</span><span style="display: none;">Player Capture DVD Audio Video Server
+                          Broadcast</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ajustes de configuración avanzados en GNOME">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.tweaks.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Retoques</span><span
+                          class="text-muted" style="display: none;">Ajustes de configuración avanzados en
+                          GNOME</span><span style="display: none;">Configuración Avanzada Preferencias Tipografías Tema
+                          XKB Teclado Escritura</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="RSA SecurID-compatible software token">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/stoken-gui.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Software Token</span><span
+                          class="text-muted" style="display: none;">RSA SecurID-compatible software token</span><span
+                          style="display: none;">RSA SecurID Authenticator</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="RSA SecurID-compatible software token">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/stoken-gui.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Software Token
+                          (small)</span><span class="text-muted" style="display: none;">RSA SecurID-compatible software
+                          token</span><span style="display: none;">RSA SecurID Authenticator</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Linux System Optimizer and Monitoring">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/stacer.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Stacer</span><span
+                          class="text-muted" style="display: none;">Linux System Optimizer and Monitoring</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Aplicación para administrar y ejecutar juegos en Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Steam (Runtime)</span><span
+                          class="text-muted" style="display: none;">Aplicación para administrar y ejecutar juegos en
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Official desktop version of Telegram messaging app">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/telegram.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Telegram Desktop</span><span
+                          class="text-muted" style="display: none;">Official desktop version of Telegram messaging
+                          app</span><span style="display: none;">tg chat im messaging messenger sms tdesktop</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ver las tipografías de su sistema">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.font-viewer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Tipografías</span><span
+                          class="text-muted" style="display: none;">Ver las tipografías de su sistema</span><span
+                          style="display: none;">tipografía letra tipo</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Application launcher for Linux">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/ulauncher.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Ulauncher</span><span
+                          class="text-muted" style="display: none;">Application launcher for Linux</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Una buena manera de ver información sobre el uso de los recursos del sistema, como la memoria y el espacio en disco.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Usage.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Uso</span><span
+                          class="text-muted" style="display: none;">Una buena manera de ver información sobre el uso de
+                          los recursos del sistema, como la memoria y el espacio en disco.</span><span
+                          style="display: none;">Monitor Sistema Proceso CPU Memoria Red Histórico Uso Rendimiento
+                          Tarea:Gestor Administrador</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="xterm wrapper for Unicode environments">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/xterm-color_48x48.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">UXTerm</span><span
+                          class="text-muted" style="display: none;">xterm wrapper for Unicode environments</span><span
+                          style="display: none;">shell prompt command commandline cmd</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam_icon_892970.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Valheim</span><span
+                          class="text-muted" style="display: none;">Play this game on Steam</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Reproducir películas">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Totem.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Vídeos</span><span
+                          class="text-muted" style="display: none;">Reproducir películas</span><span
+                          style="display: none;">Vídeo Película Clip,Serie Reproductor DVD TV Disco Totem</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea documentos de varias páginas">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Evince.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Visor de
+                          documentos</span><span class="text-muted" style="display: none;">Vea documentos de varias
+                          páginas</span><span style="display: none;">pdf ps postscript dvi xps djvu tiff documento
+                          presentación visor evince</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Code Editing. Refined.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/visual-studio-code.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Visual Studio
+                          Code</span><span class="text-muted" style="display: none;">Code Editing. Refined.</span><span
+                          style="display: none;">vscode</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Work around problems and install applications under Wine">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/winetricks.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Winetricks</span><span
+                          class="text-muted" style="display: none;">Work around problems and install applications under
+                          Wine</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="standard terminal emulator for the X window system">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/xterm-color_48x48.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">XTerm</span><span
+                          class="text-muted" style="display: none;">standard terminal emulator for the X window
+                          system</span><span style="display: none;">shell prompt command commandline cmd</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="dev" role="tabpanel" aria-labelledby="dev-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cross-platform buildsystem">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/CMakeSetup.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">CMake</span><span
+                          class="text-muted" style="display: none;">Cross-platform buildsystem</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Debug APIs like a human, not a robot">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/insomnia.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Insomnia</span><span
+                          class="text-muted" style="display: none;">Debug APIs like a human, not a robot</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Design GUIs for Qt applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/QtProject-designer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt Designer</span><span
+                          class="text-muted" style="display: none;">Design GUIs for Qt applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Add translations to Qt applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/linguist.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt Linguist</span><span
+                          class="text-muted" style="display: none;">Add translations to Qt applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Debug D-Bus applications">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qdbusviewer.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt QDBusViewer </span><span
+                          class="text-muted" style="display: none;">Debug D-Bus applications</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Code Editing. Refined.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/visual-studio-code.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Visual Studio
+                          Code</span><span class="text-muted" style="display: none;">Code Editing. Refined.</span><span
+                          style="display: none;">vscode</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="gaming" role="tabpanel" aria-labelledby="gaming-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="www.guilded.gg">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/hicolor/64x64/apps/guilded.png" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Guilded</span><span
+                          class="text-muted" style="display: none;">www.guilded.gg</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///home/pato/.local/share/icons/hicolor/64x64/apps/steam_icon_241930.png"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Middle-earth™: Shadow of
+                          Mordor™</span><span class="text-muted" style="display: none;">Play this game on
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Proton
+                          Experimental</span><span class="text-muted" style="display: none;">Play this game on
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Aplicación para administrar y ejecutar juegos en Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Steam (Runtime)</span><span
+                          class="text-muted" style="display: none;">Aplicación para administrar y ejecutar juegos en
+                          Steam</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Play this game on Steam">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/steam_icon_892970.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Valheim</span><span
+                          class="text-muted" style="display: none;">Play this game on Steam</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examine y rote imágenes">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.eog.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Eye of GNOME</span><span
+                          class="text-muted" style="display: none;">Examine y rote imágenes</span><span
+                          style="display: none;">Foto Diapositivas Gráficos</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cree imágenes y edite fotografías">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/gimp.svg" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Programa de manipulación de
+                          imágenes de GNU</span><span class="text-muted" style="display: none;">Cree imágenes y edite
+                          fotografías</span><span style="display: none;">GIMP gráfico diseño ilustración dibujo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="media" role="tabpanel" aria-labelledby="media-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Grabar y editar archivos de audio">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/audacity.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Audacity</span><span
+                          class="text-muted" style="display: none;">Grabar y editar archivos de audio</span><span
+                          style="display: none;">sound music editing voice channel frequency modulation audio trim
+                          clipping noise reduction multi track audio editor edit mixing WAV AIFF FLAC MP2 MP3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hacer fotos y vídeos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Snapshot.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cámara</span><span
+                          class="text-muted" style="display: none;">Hacer fotos y vídeos</span><span
+                          style="display: none;">picture photos camera webcam snapshot</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Tome fotografías y vídeos con su cámara web, con divertidos efectos gráficos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Cheese.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cheese</span><span
+                          class="text-muted" style="display: none;">Tome fotografías y vídeos con su cámara web, con
+                          divertidos efectos gráficos</span><span style="display: none;">foto vídeo cámara web cámara
+                          selfie</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Editor no lineal de video de KDE">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/kdenlive.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Kdenlive</span><span
+                          class="text-muted" style="display: none;">Editor no lineal de video de KDE</span><span
+                          style="display: none;">edición video audio mlt kde</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Reproducir y organizar su colección de música">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Music.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Música</span><span
+                          class="text-muted" style="display: none;">Reproducir y organizar su colección de
+                          música</span><span style="display: none;">Música Reproductor</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Free and Open Source Streaming/Recording Software">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/com.obsproject.Studio.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">OBS Studio</span><span
+                          class="text-muted" style="display: none;">Free and Open Source Streaming/Recording
+                          Software</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Allow testing Video4Linux devices">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qv4l2.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt V4L2 test
+                          Utility</span><span class="text-muted" style="display: none;">Allow testing Video4Linux
+                          devices</span><span style="display: none;">video grabber V4L</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Viewer for video capture">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/qvidcap.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Qt V4L2 video capture
+                          utility</span><span class="text-muted" style="display: none;">Viewer for video
+                          capture</span><span style="display: none;">video grabber V4L</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Lea, capture y emita sus contenidos multimedia">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/vlc.svg" class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Reproductor multimedia
+                          VLC</span><span class="text-muted" style="display: none;">Lea, capture y emita sus contenidos
+                          multimedia</span><span style="display: none;">Player Capture DVD Audio Video Server
+                          Broadcast</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Reproducir películas">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Totem.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Vídeos</span><span
+                          class="text-muted" style="display: none;">Reproducir películas</span><span
+                          style="display: none;">Vídeo Película Clip,Serie Reproductor DVD TV Disco Totem</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="office" role="tabpanel" aria-labelledby="office-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Acceder y gestionar sus calendarios">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Calendar.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Calendario</span><span
+                          class="text-muted" style="display: none;">Acceder y gestionar sus calendarios</span><span
+                          style="display: none;">Calendario Evento Recordatorio</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Gestionar sus contactos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Contacts.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Contactos</span><span
+                          class="text-muted" style="display: none;">Gestionar sus contactos</span><span
+                          style="display: none;">amigos libreta de direcciones</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea documentos de varias páginas">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Evince.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Visor de
+                          documentos</span><span class="text-muted" style="display: none;">Vea documentos de varias
+                          páginas</span><span style="display: none;">pdf ps postscript dvi xps djvu tiff documento
+                          presentación visor evince</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="online" role="tabpanel" aria-labelledby="online-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="All-in-one voice and text chat for gamers that s free, secure, and works on both your desktop and phone.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/discord.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Discord</span><span
+                          class="text-muted" style="display: none;">All-in-one voice and text chat for gamers that s
+                          free, secure, and works on both your desktop and phone.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examinar servidores SSH con zeroconf activado">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/devices/network-wired.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Examinador de servidores SSH
+                          de Avahi</span><span class="text-muted" style="display: none;">Examinar servidores SSH con
+                          zeroconf activado</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Examinar servidores VNC con zeroconf activado">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/devices/network-wired.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Examinador de servidores VNC
+                          de Avahi</span><span class="text-muted" style="display: none;">Examinar servidores VNC con
+                          zeroconf activado</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Download and upload files via FTP, FTPS and SFTP">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/filezilla.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">FileZilla</span><span
+                          class="text-muted" style="display: none;">Download and upload files via FTP, FTPS and
+                          SFTP</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Envíe y reciba mensajes de correo electrónico">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Geary.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Geary</span><span
+                          class="text-muted" style="display: none;">Envíe y reciba mensajes de correo
+                          electrónico</span><span style="display: none;">Mail E-mail email IMAP GMail Yahoo Hotmail
+                          Outlook</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/google-chrome.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Google Chrome</span><span
+                          class="text-muted" style="display: none;">Accede a Internet.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/google-chrome-unstable.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Google Chrome
+                          (unstable)</span><span class="text-muted" style="display: none;">Accede a
+                          Internet.</span><span style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Accede a Internet.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/microsoft-edge.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Microsoft Edge</span><span
+                          class="text-muted" style="display: none;">Accede a Internet.</span><span
+                          style="display: none;"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Official desktop version of Telegram messaging app">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/telegram.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Telegram Desktop</span><span
+                          class="text-muted" style="display: none;">Official desktop version of Telegram messaging
+                          app</span><span style="display: none;">tg chat im messaging messenger sms tdesktop</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top" title="None">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Settings.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Configuración</span><span
+                          class="text-muted" style="display: none;">None</span><span style="display: none;">Preferencias
+                          Configuración</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Ajustar el nivel de volumen">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/multimedia-volume-control.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Control de volumen de
+                          PulseAudio</span><span class="text-muted" style="display: none;">Ajustar el nivel de
+                          volumen</span><span style="display: none;">pavucontrol micrófono volumen fundido balance
+                          auriculares altavoces cascos audio mezclador salida entrada dispositivos reproducción
+                          grabación sonidos del sistema tarjeta de sonido configuración preferencias</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Configuración del cortafuegos">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/firewall-config.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Cortafuegos</span><span
+                          class="text-muted" style="display: none;">Configuración del cortafuegos</span><span
+                          style="display: none;">cortafuegos red seguridad iptables netfilter</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade app-tab" id="system" role="tabpanel" aria-labelledby="system-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top" title="None">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Console.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Consola</span><span
+                          class="text-muted" style="display: none;">None</span><span style="display: none;">comando
+                          prompt cmd línea ejecutar shell terminal kgx kings cross</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Observe la gestión de energía">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.PowerStats.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Estadísticas de
+                          energía</span><span class="text-muted" style="display: none;">Observe la gestión de
+                          energía</span><span style="display: none;">batería consumo carga</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Show hardware topology">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/hwloc.svg" class="img-fluid">
+                      </div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Hardware Locality
+                          lstopo</span><span class="text-muted" style="display: none;">Show hardware
+                          topology</span><span style="display: none;">System Utility</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea información acerca de su red">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/gnome-nettool.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Herramientas de
+                          red</span><span class="text-muted" style="display: none;">Vea información acerca de su
+                          red</span><span style="display: none;">red monitor remoto</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Vea los procesos actuales y monitorizar el estado del sistema">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.SystemMonitor.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Monitor del
+                          sistema</span><span class="text-muted" style="display: none;">Vea los procesos actuales y
+                          monitorizar el estado del sistema</span><span style="display: none;">Monitor Sistema Proceso
+                          CPU Memoria Red Histórico Uso Rendimiento Tarea:Gestor Actividad</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Una buena manera de ver información sobre el uso de los recursos del sistema, como la memoria y el espacio en disco.">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/org.gnome.Usage.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">Uso</span><span
+                          class="text-muted" style="display: none;">Una buena manera de ver información sobre el uso de
+                          los recursos del sistema, como la memoria y el espacio en disco.</span><span
+                          style="display: none;">Monitor Sistema Proceso CPU Memoria Red Histórico Uso Rendimiento
+                          Tarea:Gestor Administrador</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="xterm wrapper for Unicode environments">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/xterm-color_48x48.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">UXTerm</span><span
+                          class="text-muted" style="display: none;">xterm wrapper for Unicode environments</span><span
+                          style="display: none;">shell prompt command commandline cmd</span></div>
+                    </div>
+                  </div>
+                  <div class="col-12 container app-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="standard terminal emulator for the X window system">
+                    <div class="row">
+                      <div class="col-2 app-card-image"><img
+                          src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/xterm-color_48x48.svg"
+                          class="img-fluid"></div>
+                      <div class="col-10 app-card-info"><span class="name-app text-center">XTerm</span><span
+                          class="text-muted" style="display: none;">standard terminal emulator for the X window
+                          system</span><span style="display: none;">shell prompt command commandline cmd</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="widget-card col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 temp-text">
+                <h3 class="text-center">28.2 °C</h3>
+              </div>
+              <div class="col-6"><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather icon"
+                  class="img-fluid"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">28.5</div>
+                <div class="col-12 temp-text">24.1</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/11d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">26</div>
+                <div class="col-12 temp-text">22.6</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">24.1</div>
+                <div class="col-12 temp-text">19</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">23.9</div>
+                <div class="col-12 temp-text">18.2</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">23</div>
+                <div class="col-12 temp-text">20.9</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">26.5</div>
+                <div class="col-12 temp-text">21.7</div>
+              </div>
+              <div class="col text-center">
+                <div class="col-12"><img src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather icon"
+                    class="img-fluid"></div>
+                <div class="col-12 temp-text">29.4</div>
+                <div class="col-12 temp-text">22.7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav" id="menu-category" role="tablist">
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#accessories" id="accessories-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-accessories.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Useful Applications"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link active" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#all-applications" id="all-applications-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-all.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="All system Applications"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#dev" id="dev-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-development.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Change The World, Build Awesome Software"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#gaming" id="gaming-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-games.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Have a Break, Play Games And Have Fun"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#graphics" id="graphics-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-graphics.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Get Those Creative Juices Flowing"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#media" id="media-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-multimedia.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Listen To Music, Watch A Film, Or Create Your Next Masterpiece"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#office" id="office-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-office.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Get Your Paperwork Done"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#online" id="online-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-internet.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Be Social, Go Online And Talk To Everyone"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#settings" id="settings-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/preferences-other.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Configure Your Computer"
+                class="img-fluid category-img"></button></li>
+          <li class="nav-item col-3" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab"
+              aria-selected="true" data-bs-target="#system" id="system-tab"><img
+                src="file:///usr/share/icons/Fluent-teal-dark/scalable/apps/applications-system.svg"
+                data-bs-toggle="tooltip" data-bs-placement="left" title="Administer Your Computer, Advanced Users Only"
+                class="img-fluid category-img"></button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
