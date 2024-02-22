@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        vsk: "#0BC98C",
+        vsk: "var(--system-accent-color)",
       },
 			borderRadius: {
 				'vsk': 'var(--system-rounded)',
