@@ -5,3 +5,7 @@
 @import "./variables.css";
 @import './global/base.css';
 @import './global/window.css';
+@import './global/sidebar.css';
+
+/* Applications */
+@import './applications/navale.css';
