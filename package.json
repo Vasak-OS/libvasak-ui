@@ -2,9 +2,11 @@
 	"name": "libvasak-ui",
 	"version": "0.1.0",
 	"description": "UI lib for VasakOS",
+	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"build": "node-sass scss/style.scss dist/style.min.css --output-style compressed"
+		"build": "npx tailwindcss -i css/vsk.css -o css/style.css",
+		"build:prod": "npx tailwindcss -i css/vsk.css -o css/style.min.css --minify"
 	},
 	"repository": {
 		"type": "git",
@@ -19,9 +21,9 @@
 	"devDependencies": {
 		"@microsoft/eslint-formatter-sarif": "^3.0.0",
 		"eslint": "^8.25.0",
-		"eslint-plugin-css": "^0.6.0"
+		"eslint-plugin-css": "^0.6.0",
+		"postcss-import": "^16.0.1",
+		"tailwindcss": "^3.4.1"
 	},
-	"dependencies": {
-		"node-sass": "^9.0.0"
-	}
+	"dependencies": {}
 }
