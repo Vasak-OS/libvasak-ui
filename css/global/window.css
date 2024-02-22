@@ -2,6 +2,7 @@
   .window {
     @apply background;
     @apply rounded-b-vsk;
+    height: calc(100vh - 30px);
   }
 
   .window-topbar {
