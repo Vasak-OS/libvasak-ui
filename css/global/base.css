@@ -1,0 +1,15 @@
+@layer base {
+  body,
+  html {
+    @apply bg-transparent;
+    @apply text-gray-950;
+    @apply dark:text-gray-50;
+    @apply h-screen;
+  }
+
+  .background {
+    @apply bg-gray-200/75;
+    @apply dark:bg-gray-800/75;
+    @apply backdrop-blur;
+  }
+}
