@@ -5,6 +5,9 @@
     @apply text-gray-950;
     @apply dark:text-gray-50;
     @apply h-screen;
+    @apply transition;
+    @apply duration-300;
+    @apply transform;
   }
 
   .background {
