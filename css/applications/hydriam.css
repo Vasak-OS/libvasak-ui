@@ -1,0 +1,165 @@
+@layer components{
+  .hydriam {
+    @apply background;
+    @apply rounded-vsk;
+    @apply p-3;
+    @apply h-screen;
+    @apply w-screen;
+    @apply grid;
+    @apply grid-cols-6;
+  }
+
+  .hydriam-user {
+    @apply col-span-1;
+    @apply h-9;
+  }
+
+  .hydriam-user img {
+    @apply w-8;
+    @apply h-8;
+    @apply rounded-full;
+  }
+  
+  .hydriam-search {
+    @apply col-span-4;
+    @apply h-9;
+  }
+
+  .hydriam-search input {
+    @apply w-full;
+    @apply p-2;
+    @apply rounded-vsk;
+    @apply background;
+  }
+
+  .hydriam-session {
+    @apply col-span-1;
+    @apply flex;
+    @apply justify-evenly;
+    @apply content-center;
+    @apply h-9;
+  }
+
+  .hydriam-applications,
+  .hydriam-widgets,
+  .hydriam-categories {
+    @apply col-span-2;
+    height: calc(100vh - 5rem);
+    @apply overflow-y-auto;
+    @apply p-3;
+    @apply mx-2;
+    @apply my-auto;
+  }
+
+  .hydriam-applications::-webkit-scrollbar,
+  .hydriam-widgets::-webkit-scrollbar,
+  .hydriam-categories::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .hydriam-applications::-webkit-scrollbar-thumb,
+  .hydriam-widgets::-webkit-scrollbar-thumb,
+  .hydriam-categories::-webkit-scrollbar-thumb {
+    @apply bg-vsk;
+    border-radius: 0.25rem;
+  }
+
+  .hydriam-applications,
+  .hydriam-categories {
+    @apply background;
+    @apply rounded-vsk;
+  }
+
+  .hydriam-categories {
+    @apply flex;
+    @apply flex-wrap;
+    @apply gap-2;
+    @apply justify-center;
+    @apply content-start;
+  }
+
+  .hydriam-categories img {
+    @apply p-2;
+    @apply rounded-vsk;
+    @apply grayscale;
+    @apply transition;
+    @apply duration-300;
+    @apply transform;
+    @apply hover:scale-110;
+    @apply hover:grayscale-0;
+  }
+
+  .hydriam-categories .active img {
+    @apply grayscale-0;
+  }
+
+  .hydriam-application {
+    @apply grid;
+    @apply grid-cols-6;
+    @apply p-2;
+    @apply hover:bg-vsk;
+    @apply rounded-vsk; 
+    @apply transition;
+    @apply duration-300;
+    @apply transform;
+  }
+
+  .hydriam-application img {
+    @apply col-span-1;
+    @apply h-8;
+    @apply w-auto;
+  }
+
+  .hydriam-application div {
+    @apply col-span-5;
+    @apply text-left;
+    @apply my-auto;
+  }
+
+  .hydriam-widgets{
+    @apply p-0;
+  }
+
+  .hydriam-widget-weather {
+    @apply background;
+    @apply rounded-vsk;
+    @apply p-2;
+    @apply flex;
+    @apply justify-center;
+    @apply content-center;
+    @apply flex-col;
+  }
+
+  .hydriam-widget-weather-today {
+    @apply flex;
+    @apply flex-nowrap;
+    @apply justify-center;
+    @apply gap-2;
+  }
+
+
+  .hydriam-widget-weather-today h3 {
+    @apply text-center;
+    @apply text-2xl;
+    @apply font-bold;
+    @apply m-auto
+  }
+
+  .hydriam-widget-weather-today img {
+    @apply h-36;
+    @apply m-auto;
+  }
+
+  .hydriam-widget-weather-forecast {
+    @apply flex;
+    @apply flex-row;
+    @apply flex-wrap;
+    @apply justify-center;
+    @apply gap-2;
+  }
+
+  .hydriam-widget-weather-forecast img {
+    @apply min-w-6;
+  }
+
+}
