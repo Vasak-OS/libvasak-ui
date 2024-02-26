@@ -4,7 +4,7 @@
     @apply rounded-vsk;
     height: calc(100vh - 4px);
     width: calc(100vw - 24px);
-    @apply mt-1;
+    @apply mb-1;
     @apply mx-3;
     @apply flex;
     @apply items-center;
