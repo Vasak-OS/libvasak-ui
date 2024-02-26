@@ -12,6 +12,9 @@
   .hydriam-user {
     @apply col-span-1;
     @apply h-9;
+    @apply flex;
+    @apply justify-evenly;
+    @apply content-center;
   }
 
   .hydriam-user img {
@@ -102,6 +105,7 @@
     @apply transition;
     @apply duration-300;
     @apply transform;
+    @apply show-on-scroll;
   }
 
   .hydriam-application img {
