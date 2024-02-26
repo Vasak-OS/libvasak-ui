@@ -4,6 +4,7 @@
 
 @import "./variables.css";
 @import './global/base.css';
+@import './global/animations.css';
 @import './global/window.css';
 @import './global/sidebar.css';
 
