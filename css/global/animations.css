@@ -67,4 +67,10 @@
     animation-timeline: --revealing-img;
     animation-range: entry 5% cover 20%;
   }
+
+  .wiggle-animation {
+    animation-name: wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
 }

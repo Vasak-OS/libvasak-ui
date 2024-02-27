@@ -45,5 +45,6 @@
   .navale-menu img {
     @apply h-7;
     @apply w-auto;
+    @apply wiggle-animation;
   }
 }
