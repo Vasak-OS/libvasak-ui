@@ -5,8 +5,10 @@
     @apply flex-col;
     @apply items-center;
     @apply w-16; 
-    height: calc(100vh - 30px); 
+    height: calc(100vh - 46px);
+    @apply rounded-vsk;
     @apply py-8;
+    @apply m-2;
   }
 
   .sidebar-button{
@@ -16,6 +18,10 @@
     @apply duration-200; 
     @apply rounded-vsk;
     @apply hover:bg-vsk;
+  }
+
+  .sidebar-button.active{
+    @apply wiggle-animation;
   }
 
   .side-content-area{
