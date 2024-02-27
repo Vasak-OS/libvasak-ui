@@ -45,7 +45,8 @@
 
   .hydriam-applications,
   .hydriam-widgets,
-  .hydriam-categories {
+  .hydriam-categories,
+  .hydriam-search-results {
     @apply col-span-2;
     height: calc(100vh - 5rem);
     @apply overflow-y-auto;
@@ -54,26 +55,34 @@
     @apply my-auto;
   }
 
+  .hydriam-search-results {
+    @apply col-span-6;
+  }
+
   .hydriam-applications::-webkit-scrollbar,
   .hydriam-widgets::-webkit-scrollbar,
-  .hydriam-categories::-webkit-scrollbar {
+  .hydriam-categories::-webkit-scrollbar,
+  .hydriam-search-results::-webkit-scrollbar {
     width: 0.5rem;
   }
 
   .hydriam-applications::-webkit-scrollbar-thumb,
   .hydriam-widgets::-webkit-scrollbar-thumb,
-  .hydriam-categories::-webkit-scrollbar-thumb {
+  .hydriam-categories::-webkit-scrollbar-thumb,
+  .hydriam-search-results::-webkit-scrollbar-thumb {
     @apply bg-vsk;
     border-radius: 0.25rem;
   }
 
   .hydriam-applications,
-  .hydriam-categories {
+  .hydriam-categories,
+  .hydriam-search-results {
     @apply background;
     @apply rounded-vsk;
   }
 
-  .hydriam-categories {
+  .hydriam-categories,
+  .hydriam-search-results {
     @apply flex;
     @apply flex-wrap;
     @apply gap-2;
@@ -82,7 +91,7 @@
   }
 
   .hydriam-categories img {
-    @apply p-2;
+    @apply p-1;
     @apply rounded-vsk;
     @apply grayscale;
     @apply transition;
@@ -90,6 +99,8 @@
     @apply transform;
     @apply hover:scale-110;
     @apply hover:grayscale-0;
+    @apply max-h-12;
+    @apply w-auto;
   }
 
   .hydriam-categories .active img {
@@ -150,7 +161,7 @@
   }
 
   .hydriam-widget-weather-today img {
-    @apply h-36;
+    @apply h-24;
     @apply m-auto;
   }
 
@@ -163,7 +174,8 @@
   }
 
   .hydriam-widget-weather-forecast img {
-    @apply min-w-6;
+    @apply min-w-7;
+    @apply max-w-14;
   }
 
 }
