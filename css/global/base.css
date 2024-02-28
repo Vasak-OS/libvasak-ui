@@ -8,6 +8,7 @@
     @apply transition;
     @apply duration-300;
     @apply transform;
+    @apply accent-vsk;
   }
 
   .background {
