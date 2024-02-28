@@ -1,0 +1,8 @@
+@layer components{
+  .ocassum-info-logo{
+    @apply max-h-60;
+    @apply w-auto;
+    @apply mx-auto;
+    @apply my-4
+  }
+}

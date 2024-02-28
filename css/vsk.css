@@ -4,6 +4,7 @@
 
 @import "./variables.css";
 @import './global/base.css';
+@import './global/transitions.css';
 @import './global/animations.css';
 @import './global/window.css';
 @import './global/sidebar.css';
@@ -11,3 +12,4 @@
 /* Applications */
 @import './applications/navale.css';
 @import './applications/hydriam.css';
+@import './applications/occasum.css';
