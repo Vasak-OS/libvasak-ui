@@ -1,8 +1,78 @@
-@layer components{
-  .ocassum-info-logo{
+@layer components {
+  .ocassum-info-logo {
     @apply max-h-60;
     @apply w-auto;
     @apply mx-auto;
-    @apply my-4
+    @apply my-4;
+  }
+
+  .ocassum-network-status-card {
+    @apply background;
+    @apply w-full;
+    @apply max-w-md;
+    @apply px-8;
+    @apply py-4;
+    @apply mt-16;
+    @apply rounded-vsk;
+    @apply shadow-lg;
+    @apply mx-auto;
+  }
+
+  .ocassum-network-status-card h2 {
+    @apply mt-2;
+    @apply text-xl;
+    @apply font-semibold;
+    @apply md:mt-0;
+  }
+
+  .ocassum-network-status-card p {
+    @apply mt-2;
+    @apply text-sm;
+  }
+
+  .ocassum-network-status-card div {
+    @apply flex;
+    @apply justify-end;
+    @apply mt-4;
+  }
+
+  .ocassum-network-status-card div p {
+    @apply text-lg;
+    @apply font-medium;
+  }
+
+  .network-status {
+    @apply w-4;
+    @apply h-4;
+    @apply rounded-full;
+    @apply pulse;
+    @apply float-end;
+    @apply float-right;
+  }
+
+  .connected {
+    @apply bg-green-500;
+    box-shadow: 0 0 0 0px rgba(34, 197, 94, .2) ;
+  }
+
+  .disconnected {
+    @apply bg-red-500;
+    box-shadow: 0 0 0 0px rgba(239, 68, 68, .2) ;
+  }
+
+  div.ocassum-network-status-card-icon {
+    @apply flex;
+    @apply justify-center;
+    @apply -mt-16;
+    @apply md:justify-end;
+  }
+
+  div.ocassum-network-status-card-icon img {
+    @apply object-cover;
+    @apply w-20;
+    @apply h-20;
+    @apply background;
+    @apply rounded-vsk;
+    @apply p-1;
   }
 }
