@@ -60,6 +60,15 @@
     }
   }
 
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px inherit;
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+
   .show-on-scroll {
     view-timeline-name: --revealing-img;
     animation-name: show-on-scroll;
@@ -72,5 +81,9 @@
     animation-name: wiggle;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+  }
+
+  .pulse {
+    animation: pulse-animation 2s infinite;
   }
 }
