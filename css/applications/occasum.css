@@ -48,6 +48,7 @@
     @apply pulse;
     @apply float-end;
     @apply float-right;
+    @apply animate-ping
   }
 
   .connected {
