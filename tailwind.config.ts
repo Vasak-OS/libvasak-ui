@@ -4,6 +4,7 @@ export default {
   darkMode: "class",
   plugins: [
 		'postcss-import': {},
+    require('tailwindcss-animated')
 	],
   content: [
 		"./**/*.{js,ts,html}",
