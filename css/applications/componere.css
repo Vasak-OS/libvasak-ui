@@ -1,0 +1,64 @@
+@layer components {
+  .slide {
+    @apply bg-cover;
+    @apply bg-center;
+    @apply h-auto;
+    @apply text-white;
+    @apply py-24;
+    @apply px-10;
+    @apply object-fill;
+    @apply rounded-vsk;
+    @apply aspect-video;
+    width: 100%;
+  }
+
+  .componere-cta-section {
+    @apply absolute;
+    @apply bottom-3;
+    @apply content-center;
+    width: calc(100% - 164px);
+    @apply text-center;
+  }
+
+  .componere-cta-section button {
+    @apply bg-vsk;
+    @apply text-white;
+    @apply py-3;
+    @apply px-5;
+    @apply rounded-full;
+  }
+
+  .componere-user-cta-button {
+    @apply bg-vsk;
+    @apply flex;
+    @apply w-full;
+    @apply justify-center;
+    @apply rounded-vsk;
+    @apply bg-vsk;
+    @apply px-3;
+    @apply py-1.5;
+    @apply font-semibold;
+    @apply leading-6;
+    @apply text-white;
+    @apply shadow-sm;
+    @apply focus-visible:outline;
+    @apply focus-visible:outline-2;
+    @apply focus-visible:outline-offset-2;
+  }
+
+  .componere-user-input {
+    @apply block;
+    @apply w-full;
+    @apply rounded-vsk;
+    @apply border-0;
+    @apply py-1.5;
+    @apply shadow-sm;
+    @apply ring-1;
+    @apply ring-inset;
+    @apply focus:ring-2;
+    @apply focus:ring-inset;
+    @apply focus:ring-vsk;
+    @apply sm:text-sm;
+    @apply sm:leading-6;
+  }
+}
