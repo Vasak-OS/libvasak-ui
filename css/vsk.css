@@ -8,6 +8,8 @@
 @import './global/animations.css';
 @import './global/window.css';
 @import './global/sidebar.css';
+@import './global/card.css';
+@import './global/forms.css';
 
 /* Applications */
 @import './applications/navale.css';
