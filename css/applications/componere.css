@@ -61,4 +61,38 @@
     @apply sm:text-sm;
     @apply sm:leading-6;
   }
+
+  .componere-disk-space {
+    @apply relative;
+    @apply w-full;
+    @apply bg-gray-200;
+    @apply rounded-vsk;
+    @apply h-12;
+    @apply my-2;
+  }
+
+  .componere-disk-partition {
+    @apply float-left;
+    @apply top-0;
+    @apply h-full;
+    @apply rounded;
+  }
+
+  .componere-disk-partition::after {
+    @apply float-left;
+    @apply rounded;
+    @apply top-0;
+    @apply right-0;
+    @apply bottom-0;
+    @apply left-0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(233, 233, 233, 1) 0,
+      rgba(233, 233, 233, 0.9) 50%,
+      rgba(233, 233, 233, 0.8) 100%
+    );
+    animation: shimmer 2s ease-out infinite;
+    content: "";
+  }
 }
