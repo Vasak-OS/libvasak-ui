@@ -1,30 +1,34 @@
-@layer components{
-  .sidebar{
+@layer components {
+  .sidebar {
     @apply background;
     @apply flex;
     @apply flex-col;
     @apply items-center;
-    @apply w-16; 
+    @apply w-16;
     height: calc(100vh - 46px);
     @apply rounded-vsk;
     @apply py-8;
     @apply m-2;
   }
 
-  .sidebar-button{
+  .sidebar-button {
     @apply p-2;
     @apply mx-2;
     @apply transition-colors;
-    @apply duration-200; 
+    @apply duration-200;
     @apply rounded-vsk;
     @apply hover:bg-vsk;
   }
 
-  .sidebar-button.active{
+  .sidebar-button.active {
     @apply wiggle-animation;
   }
 
-  .side-content-area{
+  .sidebar-button img {
+    @apply w-7 h-7
+  }
+
+  .side-content-area {
     height: calc(100vh - 30px);
     @apply w-full;
     @apply overflow-y-auto;
