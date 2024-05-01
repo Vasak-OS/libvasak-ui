@@ -1,9 +1,15 @@
-@layer components{
+@layer components {
   .card {
     @apply background;
     @apply backdrop-blur;
     @apply rounded-vsk;
-    @apply p-2;
+    @apply p-3;
+    @apply flex;
+    @apply flex-wrap;
+    @apply flex-col;
+    @apply justify-center;
+    @apply shadow-lg;
+    @apply mb-3;
   }
 
   .card-title {
