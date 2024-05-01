@@ -26,6 +26,7 @@
     @apply py-3;
     @apply px-5;
     @apply rounded-full;
+    @apply mx-3;
   }
 
   .componere-user-cta-button {
@@ -75,24 +76,43 @@
     @apply float-left;
     @apply top-0;
     @apply h-full;
-    @apply rounded;
   }
 
-  .componere-disk-partition::after {
-    @apply float-left;
-    @apply rounded;
-    @apply top-0;
-    @apply right-0;
-    @apply bottom-0;
-    @apply left-0;
-    transform: translateX(-100%);
-    background-image: linear-gradient(
-      90deg,
-      rgba(233, 233, 233, 1) 0,
-      rgba(233, 233, 233, 0.9) 50%,
-      rgba(233, 233, 233, 0.8) 100%
-    );
-    animation: shimmer 2s ease-out infinite;
-    content: "";
+  .componere-disk-partition p {
+    @apply flex;
+    @apply flex-wrap;
+    @apply flex-col;
+    @apply justify-items-center;
+    @apply items-center;
+    @apply justify-center;
+    @apply h-full;
+  }
+
+  .componere-disk-partition:first-child {
+    @apply rounded-tl-vsk;
+    @apply rounded-bl-vsk;
+  }
+
+  .componere-disk-partition:last-child {
+    @apply rounded-tr-vsk;
+    @apply rounded-br-vsk;
+  }
+
+  .card-head-disk {
+    @apply flex;
+    @apply flex-wrap;
+    @apply justify-items-center;
+    @apply items-center;
+    @apply flex-row;
+  }
+
+  .card-head-disk img {
+    @apply h-20;
+    @apply w-20;
+  }
+
+  .card-head-disk-info {
+    @apply pl-3;
+    width: calc(100% - 80px);
   }
 }
