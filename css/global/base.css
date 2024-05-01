@@ -10,6 +10,11 @@
     @apply transition-colors;
     @apply transform;
     @apply accent-vsk;
+    accent-color: var(--system-accent-color);
+  }
+
+  html * {
+    accent-color: var(--system-accent-color);
   }
 
   .background {
@@ -26,7 +31,8 @@
     @apply rounded-vsk;
   }
 
-  th, td {
+  th,
+  td {
     @apply p-2;
   }
 }
