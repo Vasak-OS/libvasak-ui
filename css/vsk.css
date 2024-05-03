@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./variables.css";
+@import './global/base.css';
+@import './global/transitions.css';
+@import './global/animations.css';
+@import './global/window.css';
+@import './global/sidebar.css';
+@import './global/card.css';
+@import './global/forms.css';
+
+/* Applications */
+@import './applications/navale.css';
+@import './applications/hydriam.css';
+@import './applications/occasum.css';
+@import './applications/componere.css';

@@ -1,0 +1,10 @@
+@layer components{
+  select{
+    @apply background;
+    @apply border-vsk;
+    @apply rounded-vsk;
+    @apply p-2;
+    @apply w-full;
+    @apply mb-2;
+  }
+}

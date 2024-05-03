@@ -1,27 +1,33 @@
 {
-	"name": "libvasak-ui",
-	"version": "0.1.0",
-	"description": "UI lib for VasakOS",
-	"main": "index.js",
-	"scripts": {
-		"build": "node-sass scss/style.scss dist/style.min.css --output-style compressed"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Vasak-OS/libvasak-ui.git"
-	},
-	"author": "",
-	"license": "GPL-3.0-or-later",
-	"bugs": {
-		"url": "https://github.com/Vasak-OS/libvasak-ui/issues"
-	},
-	"homepage": "https://github.com/Vasak-OS/libvasak-ui#readme",
-	"devDependencies": {
-		"@microsoft/eslint-formatter-sarif": "^3.0.0",
-		"eslint": "^8.25.0",
-		"eslint-plugin-css": "^0.6.0"
-	},
-	"dependencies": {
-		"node-sass": "^9.0.0"
-	}
+  "name": "libvasak-ui",
+  "version": "0.1.0",
+  "description": "UI lib for VasakOS",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i css/vsk.css -o css/style.css",
+    "build:prod": "npx tailwindcss -i css/vsk.css -o dist/style.min.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasak-OS/libvasak-ui.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Vasak-OS/libvasak-ui/issues"
+  },
+  "homepage": "https://github.com/Vasak-OS/libvasak-ui#readme",
+  "devDependencies": {
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
+    "eslint": "^9.1.1",
+    "eslint-plugin-css": "^0.9.2",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "^20.12.7",
+    "tailwindcss-animated": "^1.0.1"
+  }
 }

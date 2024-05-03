@@ -1,0 +1,99 @@
+@layer components {
+  .window {
+    @apply background;
+    @apply rounded-b-vsk;
+    height: calc(100vh - 30px);
+  }
+
+  .window-topbar {
+    @apply w-screen;
+    height: 30px;
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+    @apply background;
+    @apply rounded-t-vsk;
+    padding: 2px 10px;
+  }
+
+  .window-topbar img {
+    height: 26px;
+    width: auto;
+  }
+
+  .win-button {
+    @apply px-2;
+    @apply no-underline;
+  }
+
+  .win-edge {
+    @apply absolute;
+    z-index: 100;
+    @apply bg-transparent;
+  }
+
+  .win-edge-top {
+    top: -30px;
+    left: 10px;
+    width: calc(100vw - 20px);
+    @apply h-2;
+    cursor: ns-resize;
+    font-size: 0;
+  }
+
+  .win-edge-bottom {
+    bottom: 0;
+    left: 10px;
+    width: calc(100vw - 20px);
+    @apply h-2;
+    cursor: ns-resize;
+  }
+
+  .win-edge-left {
+    top: 10px;
+    left: 0;
+    @apply w-2;
+    height: calc(100vh - 40px);
+    cursor: ew-resize;
+  }
+
+  .win-edge-right {
+    top: 10px;
+    right: 0;
+    @apply w-2;
+    height: calc(100vh - 40px);
+    cursor: ew-resize;
+  }
+
+  .win-edge-topleft {
+    top: 0;
+    left: 0;
+    @apply w-2;
+    @apply h-2;
+    cursor: nwse-resize;
+  }
+
+  .win-edge-bottomleft {
+    bottom: 0;
+    left: 0;
+    @apply w-2;
+    @apply h-2;
+    cursor: nesw-resize;
+  }
+
+  .win-edge-topright {
+    top: 0;
+    right: 0;
+    @apply w-2;
+    @apply h-2;
+    cursor: nesw-resize;
+  }
+
+  .win-edge-bottomright {
+    bottom: 0;
+    right: 0;
+    @apply w-2;
+    @apply h-2;
+    cursor: nwse-resize;
+  }
+}

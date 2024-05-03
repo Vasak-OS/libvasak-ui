@@ -1,0 +1,38 @@
+@layer base {
+  body,
+  html {
+    @apply bg-transparent;
+    @apply text-gray-950;
+    @apply dark:text-gray-50;
+    @apply h-screen;
+    @apply transition;
+    @apply duration-300;
+    @apply transition-colors;
+    @apply transform;
+    @apply accent-vsk;
+    accent-color: var(--system-accent-color);
+  }
+
+  html * {
+    accent-color: var(--system-accent-color);
+  }
+
+  .background {
+    @apply bg-gray-200/75;
+    @apply dark:bg-gray-800/75;
+    @apply text-gray-950;
+    @apply dark:text-gray-50;
+    @apply backdrop-blur;
+  }
+
+  table {
+    @apply w-full;
+    @apply background;
+    @apply rounded-vsk;
+  }
+
+  th,
+  td {
+    @apply p-2;
+  }
+}

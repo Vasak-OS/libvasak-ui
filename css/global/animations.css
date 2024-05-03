@@ -1,0 +1,96 @@
+@layer base {
+  @keyframes show-on-scroll {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+
+  @keyframes wiggle {
+    0%,
+    7% {
+      transform: rotateZ(0);
+    }
+
+    15% {
+      transform: rotateZ(-15deg);
+    }
+
+    20% {
+      transform: rotateZ(10deg);
+    }
+
+    25% {
+      transform: rotateZ(-10deg);
+    }
+
+    30% {
+      transform: rotateZ(6deg);
+    }
+
+    35% {
+      transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+
+    50% {
+      box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-10px);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px inherit;
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+  }
+
+  .show-on-scroll {
+    view-timeline-name: --revealing-img;
+    animation-name: show-on-scroll;
+    animation-fill-mode: both;
+    animation-timeline: --revealing-img;
+    animation-range: entry 5% cover 20%;
+  }
+
+  .wiggle-animation {
+    animation-name: wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+}
