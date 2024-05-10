@@ -67,7 +67,7 @@
     @apply -mt-6;
   }
 
-  .componere-user-profile-button{
+  .componere-user-profile-button {
     @apply bg-red-500;
     @apply text-white;
     @apply px-2;
@@ -76,6 +76,10 @@
     @apply relative;
     @apply bottom-16;
     @apply left-11;
+  }
+
+  .componere-user-profile-area img {
+    @apply p-0.5;
   }
 
   .componere-user-cta-button {
@@ -163,5 +167,14 @@
   .card-head-disk-info {
     @apply pl-3;
     width: calc(100% - 80px);
+  }
+
+  .componere-confirm-users-list {
+    @apply flex;
+    @apply flex-row;
+    @apply flex-wrap;
+    @apply justify-center;
+    @apply items-center;
+    @apply w-full;
   }
 }
