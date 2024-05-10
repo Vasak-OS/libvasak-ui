@@ -16,8 +16,13 @@
     @apply absolute;
     @apply bottom-3;
     @apply content-center;
-    width: calc(100% - 164px);
     @apply text-center;
+    @apply z-10;
+    @apply p-2;
+    @apply background;
+    @apply rounded-t-vsk;
+    right: 45px;
+    @apply -mb-3;
   }
 
   .componere-cta-section button {
@@ -27,6 +32,50 @@
     @apply px-5;
     @apply rounded-full;
     @apply mx-3;
+  }
+
+  .componere-user-section {
+    @apply flex;
+    width: calc(100% - 52px);
+    @apply flex-col;
+    @apply justify-center;
+    @apply px-6;
+    @apply py-12;
+    @apply lg:px-8;
+  }
+
+  .componere-user-list {
+    @apply absolute;
+    @apply right-0;
+    @apply top-0;
+    @apply h-full;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+  }
+
+  .componere-user-list-section {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply bg-white;
+    @apply rounded-l-vsk;
+    @apply p-3;
+    @apply background;
+    @apply -mt-6;
+  }
+
+  .componere-user-profile-button{
+    @apply bg-red-500;
+    @apply text-white;
+    @apply px-2;
+    @apply py-0.5;
+    @apply rounded-full;
+    @apply relative;
+    @apply bottom-16;
+    @apply left-11;
   }
 
   .componere-user-cta-button {
