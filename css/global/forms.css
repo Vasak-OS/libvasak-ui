@@ -1,5 +1,5 @@
-@layer components{
-  select{
+@layer components {
+  select {
     @apply background;
     @apply border-vsk;
     @apply rounded-vsk;

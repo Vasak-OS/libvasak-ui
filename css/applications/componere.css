@@ -199,4 +199,12 @@
     @apply px-4;
     @apply py-3;
   }
+
+  .componere-swap-area {
+    @apply flex;
+    @apply flex-row;
+    @apply justify-end;
+    @apply items-center;
+    @apply pb-2;
+  }
 }
