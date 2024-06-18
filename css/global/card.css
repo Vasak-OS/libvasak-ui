@@ -12,9 +12,17 @@
     @apply mb-3;
   }
 
+  .warn-card {
+    @apply bg-yellow-500/75;
+    @apply text-yellow-800;
+  }
+
   .card-title {
     @apply text-xl;
     @apply font-bold;
     @apply text-vsk;
+  }
+  .warn-card .card-title {
+    @apply text-yellow-900;
   }
 }
