@@ -1,0 +1,34 @@
+@layer components {
+  .loading {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply h-screen
+  }
+
+  .loading div{
+    @apply relative;
+  }
+
+  .loading-shadow {
+    @apply h-24;
+    @apply w-24;
+    @apply rounded-full;
+    @apply border-t-8;
+    @apply border-b-8;
+    @apply border-gray-200;
+  }
+
+  .loading-spinner {
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+    @apply h-24;
+    @apply w-24;
+    @apply rounded-full;
+    @apply border-t-8;
+    @apply border-b-8;
+    @apply border-vsk;
+    @apply animate-spin;
+  }
+}
