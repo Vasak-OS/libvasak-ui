@@ -3,7 +3,8 @@
     @apply flex;
     @apply items-center;
     @apply justify-center;
-    @apply h-screen
+    @apply h-screen;
+    @apply z-50;
   }
 
   .loading div{
