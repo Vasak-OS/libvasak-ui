@@ -17,3 +17,7 @@
 @import './applications/hydriam.css';
 @import './applications/occasum.css';
 @import './applications/componere.css';
+@import './applications/desktop.css';
+
+/* Widgets */
+@import './applications/widgets/desktop/clock.css';
