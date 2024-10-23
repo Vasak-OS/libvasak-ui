@@ -1,0 +1,10 @@
+@layer components {
+  .widget-frame {
+    @apply background;
+    @apply rounded-vsk;
+    @apply shadow-md;
+    @apply p-4;
+    @apply relative;
+    @apply overflow-hidden;
+  }
+}

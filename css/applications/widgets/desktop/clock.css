@@ -1,0 +1,28 @@
+@layer components{
+  .clock-position {
+    @apply absolute;
+    @apply top-[50%];
+    @apply left-[50%];
+    @apply transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .clock-widget {
+    @apply font-sans;
+    @apply text-6xl;
+  }
+
+  .clock-date, .clock-time {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply flex-row;
+  }
+
+  .clock-time-box {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply flex-col;
+    @apply text-3xl;
+    @apply font-bold;
+  }
+}
